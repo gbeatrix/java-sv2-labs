@@ -1,0 +1,10 @@
+$ mvn -version
+Apache Maven 3.8.3 (ff8e977a158738155dc465c6a97ffaf31982d739)
+Maven home: /opt/apache-maven-3.8.3
+Java version: 17, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-17
+Default locale: hu_HU, platform encoding: UTF-8
+OS name: "linux", version: "4.19.0-18-amd64", arch: "amd64", family: "unix"
+$ echo $M2_HOME
+/opt/apache-maven-3.8.3
+$ echo $PATH
+/opt/apache-maven-3.8.3/bin:/usr/lib/jvm/jdk-17/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games

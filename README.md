@@ -3,12 +3,24 @@
 .
 ├── selfcheck/
 │   └── week01.md
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   └── resources/
-│   └── test/
-│       └── java/
-├── pom.xml
+├── training/
+│   ├── introjdk/
+│   ├── intromaven/
+│   ├── introide/
+│   └── introgit/
+├── training-solutions/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   ├── classstructureio/
+│   │   │   │   ├── classstructureattributes/
+│   │   │   │   ├── classstructuremethods/
+│   │   │   │   ├── classstructureconstructors/
+│   │   │   │   └── classstructureintegrate/
+│   │   │   └── resources/
+│   │   └── test/
+│   │       └── java/
+│   ├── .gitignore
+│   └── pom.xml
 └── README.md
 ```

@@ -1,0 +1,2 @@
+Letöltöttem a https://www.jetbrains.com/idea/#chooseYourEdition oldalról a IntelliJ IDEA Community Edition .tar.gz (Linux) csomagját és kicsomagoltam a /opt mappába.
+Az Install-Linux-tar.txt fájlban leírtak alapján kezdtem el használni.

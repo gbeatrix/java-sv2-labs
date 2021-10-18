@@ -1,6 +1,10 @@
 package classstructuremethods;
 
 public class Client {
+    private String name;
+    private int year;
+    private String address;
+
     public String getName() {
         return name;
     }
@@ -24,10 +28,6 @@ public class Client {
     public void setAddress(String address) {
         this.address = address;
     }
-
-    private String name;
-    private int year;
-    private String address;
 
     public void migrate(String address){
         setAddress(address);

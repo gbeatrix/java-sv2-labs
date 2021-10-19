@@ -19,7 +19,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] JAR állomány gyakorlati feladat
 * [x] [Szöveges típus](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709758-szoveges-tipus)
 * [x] Szöveges típus gyakorlati feladat
-* [ ] [Sortörés kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188842-sortores-kezelese)
+* [x] [Sortörés kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188842-sortores-kezelese)
 * [ ] Sortörés kezelése gyakorlati feladat
 * [ ] [Dátum és időkezelés alapok](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709798-datum-es-idokezeles-alapok)
 * [ ] Dátum és időkezelés alapok gyakorlati feladat
@@ -53,8 +53,8 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 
 ## Konzultációk
 
-* [ ] 2021-10-18 konzultáció részvétel/videó
-* [ ] 2021-10-18 konzultáció gyakorlati feladat
+* [x] 2021-10-18 konzultáció részvétel/videó
+* [x] 2021-10-18 konzultáció gyakorlati feladat
 * [ ] 2021-10-19 konzultáció részvétel/videó
 * [ ] 2021-10-19 konzultáció gyakorlati feladat
 * [ ] 2021-10-21 konzultáció részvétel/videó

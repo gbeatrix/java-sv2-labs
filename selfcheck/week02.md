@@ -33,7 +33,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] [Parancssori paraméterek](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/17496052-parancssori-parameterek)
 * [x] Parancssori paraméterek gyakorlati feladat
 * [x] [Tömbök tömbje](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709631-tombok-tombje)
-* [ ] Tömbök tömbje gyakorlati feladat
+* [x] Tömbök tömbje gyakorlati feladat
 * [ ] [Tömbök kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709801-tombok-kezelese)
 * [ ] Tömbök kezelése gyakorlati feladat
 * [ ] [Lista](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709852-lista)

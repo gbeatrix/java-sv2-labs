@@ -22,6 +22,15 @@ public class ArraysMain {
         return Arrays.equals(day, anotherDay);
     }
 
+    public int min(int a, int b){
+        return a<b ? a : b;
+    }
+
+    public boolean sameTempValuesDaylight(double[] day, double[] anotherDay){
+        int len = min(day.length, anotherDay.length);
+        return sameTempValues(Arrays.copyOfRange(day, 0, len), Arrays.copyOfRange(anotherDay, 0, len));
+    }
+
     public static void main(String[] args) {
         ArraysMain arraysMain = new ArraysMain();
 
@@ -34,5 +43,13 @@ public class ArraysMain {
         double[] sat = Arrays.copyOf(mon, mon.length);
         System.out.println(arraysMain.sameTempValues(mon, sat)?"pass":"fail");
         System.out.println(arraysMain.sameTempValues(mon, tue)?"fail":"pass");
+
+        double[] fri = Arrays.copyOf(mon, mon.length-1);
+        double[] sun = new double[25];
+        sun[0] = mon[mon.length-1];
+        System.arraycopy(mon, 0, sun, 1, mon.length);
+        System.out.println(Arrays.toString(sun));
+        System.out.println(arraysMain.sameTempValuesDaylight(mon, fri)?"pass":"fail");
+        System.out.println(arraysMain.sameTempValuesDaylight(sun, fri)?"fail":"pass");
     }
 }

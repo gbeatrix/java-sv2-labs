@@ -31,6 +31,12 @@ public class ArraysMain {
         return sameTempValues(Arrays.copyOfRange(day, 0, len), Arrays.copyOfRange(anotherDay, 0, len));
     }
 
+    public boolean wonLottery(int[] ticket1, int[] ticket2){
+        Arrays.sort(ticket1);
+        Arrays.sort(ticket2);
+        return Arrays.equals(ticket1, ticket2);
+    }
+
     public static void main(String[] args) {
         ArraysMain arraysMain = new ArraysMain();
 
@@ -51,5 +57,10 @@ public class ArraysMain {
         System.out.println(Arrays.toString(sun));
         System.out.println(arraysMain.sameTempValuesDaylight(mon, fri)?"pass":"fail");
         System.out.println(arraysMain.sameTempValuesDaylight(sun, fri)?"fail":"pass");
+
+        int[] ticket = { 64, 49, 86, 73, 22 };
+        System.out.println(arraysMain.wonLottery(ticket, new int[]{ 25, 36, 49, 64, 81 })?"Nyert":"Talán legközelebb");
+        System.out.println(arraysMain.wonLottery(ticket, new int[]{ 22, 73, 86, 49, 64 })?"Nyert":"Talán legközelebb");
+        System.out.println(Arrays.toString(ticket));
     }
 }

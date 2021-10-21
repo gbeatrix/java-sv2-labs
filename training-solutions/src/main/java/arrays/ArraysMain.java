@@ -32,9 +32,11 @@ public class ArraysMain {
     }
 
     public boolean wonLottery(int[] ticket1, int[] ticket2){
-        Arrays.sort(ticket1);
-        Arrays.sort(ticket2);
-        return Arrays.equals(ticket1, ticket2);
+        int[] t1 = Arrays.copyOf(ticket1, ticket1.length);
+        int[] t2 = Arrays.copyOf(ticket2, ticket2.length);
+        Arrays.sort(t1);
+        Arrays.sort(t2);
+        return Arrays.equals(t1, t2);
     }
 
     public static void main(String[] args) {

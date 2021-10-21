@@ -18,11 +18,21 @@ public class ArraysMain {
         return Arrays.deepToString(mult);
     }
 
+    public boolean sameTempValues(double[] day, double[] anotherDay){
+        return Arrays.equals(day, anotherDay);
+    }
+
     public static void main(String[] args) {
         ArraysMain arraysMain = new ArraysMain();
 
         System.out.println(arraysMain.numberOfDaysAsString());
 
         System.out.println(arraysMain.multiplicationTableAsString(7));
+
+        double[] mon = { 14, 14, 13, 13, 12, 11, 10, 10, 10, 11, 12, 14, 14, 14, 15, 15, 15, 14, 14, 13, 12, 11, 11, 10 };
+        double[] tue = { 14, 14, 13, 13, 12, 11, 10, 10, 10, 11, 12, 14, 15, 15, 16, 16, 16, 15, 15, 14, 13, 12, 12, 11 };
+        double[] sat = Arrays.copyOf(mon, mon.length);
+        System.out.println(arraysMain.sameTempValues(mon, sat)?"pass":"fail");
+        System.out.println(arraysMain.sameTempValues(mon, tue)?"fail":"pass");
     }
 }

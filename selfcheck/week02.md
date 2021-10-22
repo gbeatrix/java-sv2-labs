@@ -38,7 +38,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] Tömbök kezelése gyakorlati feladat
 * [x] [Lista](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709852-lista)
 * [x] Lista gyakorlati feladat
-* [ ] [Lista létrehozása](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993631-lista-letrehozasa)
+* [x] [Lista létrehozása](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993631-lista-letrehozasa)
 * [ ] Lista létrehozása gyakorlati feladat
 * [ ] [Ciklusok fajtái](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993677-ciklusok-fajtai)
 * [ ] Ciklusok fajtái gyakorlati feladat

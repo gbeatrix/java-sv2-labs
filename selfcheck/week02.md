@@ -44,7 +44,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] Ciklusok fajtái gyakorlati feladat
 * [x] [Módosítás bejáráskor](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993685-modositas-bejaraskor)
 * [x] Módosítás bejáráskor gyakorlati feladat
-* [ ] [Debug](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709799-debug)
+* [x] [Debug](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709799-debug)
 * [ ] Debug gyakorlati feladat
 * [ ] [Konstans értékek használata](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709785-konstans-ertekek-hasznalata)
 * [ ] Konstans értékek használata gyakorlati feladat

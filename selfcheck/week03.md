@@ -10,8 +10,8 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [x] [Bevezetés az attribútumok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709844-bevezetes-az-attributumok-hasznalataba)
 * [x] Bevezetés az attribútumok használatába gyakorlati feladat
 * [x] [Bevezetés a konstruktorok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709653-bevezetes-a-konstruktorok-hasznalataba)
-* [ ] Bevezetés a konstruktorok használatába gyakorlati feladat
-* [ ] [Bevezetés a metódusok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709834-bevezetes-a-metodusok-hasznalataba)
+* [x] Bevezetés a konstruktorok használatába gyakorlati feladat
+* [x] [Bevezetés a metódusok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709834-bevezetes-a-metodusok-hasznalataba)
 * [ ] Bevezetés a metódusok használatába gyakorlati feladat
 * [ ] [Referenciák videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709845-referenciak)
 * [ ] Referenciák gyakorlati feladat

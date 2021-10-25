@@ -6,8 +6,8 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 ## Részletesebben az osztályokról és objektumokról
 
 * [x] [Objektumok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709803-objektumok)
-* [ ] Objektumok gyakorlati feladat
-* [ ] [Bevezetés az attribútumok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709844-bevezetes-az-attributumok-hasznalataba)
+* [x] Objektumok gyakorlati feladat
+* [x] [Bevezetés az attribútumok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709844-bevezetes-az-attributumok-hasznalataba)
 * [ ] Bevezetés az attribútumok használatába gyakorlati feladat
 * [ ] [Bevezetés a konstruktorok használatába videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709653-bevezetes-a-konstruktorok-hasznalataba)
 * [ ] Bevezetés a konstruktorok használatába gyakorlati feladat

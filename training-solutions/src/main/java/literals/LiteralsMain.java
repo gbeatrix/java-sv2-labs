@@ -17,5 +17,8 @@ public class LiteralsMain {
 
         long big = 3_244_444_444L;
         System.out.println(big);
+
+        String word = "title".toUpperCase();
+        System.out.println(word);
     }
 }

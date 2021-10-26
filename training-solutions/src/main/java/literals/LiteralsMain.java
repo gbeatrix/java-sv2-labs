@@ -14,5 +14,8 @@ public class LiteralsMain {
         System.out.println(quotient);
         quotient = 3e0/4;
         System.out.println(quotient);
+
+        long big = 3_244_444_444L;
+        System.out.println(big);
     }
 }

@@ -11,5 +11,11 @@ public class FirstEnumMain {
         System.out.println(Continent.AUSTRALIA);
         System.out.println(Continent.EUROPE);
         System.out.println(Arrays.toString(Continent.values()));
+
+        System.out.println(Ocean.valueOf("ATLANTIC"));
+        System.out.println(Ocean.valueOf("PACIFIC"));
+        System.out.println(Ocean.valueOf("INDIAN"));
+        System.out.println(Ocean.valueOf("SOUTHERN"));
+        System.out.println(Ocean.valueOf("ARCTIC"));
     }
 }

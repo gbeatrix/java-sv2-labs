@@ -22,9 +22,9 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 
 ## Típusok és operátorok
 
-* [ ] [Literálok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709837-literalok)
-* [ ] Literálok gyakorlati feladat
-* [ ] [Egyszerű típusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709846-egyszeru-tipusok)
+* [x] [Literálok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709837-literalok)
+* [x] Literálok gyakorlati feladat
+* [x] [Egyszerű típusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709846-egyszeru-tipusok)
 * [ ] Egyszerű típusok gyakorlati feladat
 * [ ] [Karakter videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993708-karakter)
 * [ ] Karakter gyakorlati feladat
@@ -33,7 +33,7 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [ ] [Operátorok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709858-operatorok)
 * [ ] Operátorok gyakorlati feladat 
 * [ ] Oszthatóság vizsgálata gyakorlati feladat [(Szöveges anyag itt)](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/texts/28278683-oszthatosag-vizsgalata)
-* [ ] [Egész és lebegőpontos számok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709854-egesz-es-lebegopontos-szamok)
+* [x] [Egész és lebegőpontos számok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709854-egesz-es-lebegopontos-szamok)
 * [ ] Egész és lebegőpontos számok gyakorlati feladat
 * [ ] [Típuskonverzió videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709762-tipuskonverzio)
 * [ ] Típuskonverzió gyakorlati feladat
@@ -60,8 +60,8 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 
 * [x] 2021-10-25 konzultáció részvétel/videó
 * [x] 2021-10-25 konzultáció gyakorlati feladat
-* [ ] 2021-10-26 konzultáció részvétel/videó
-* [ ] 2021-10-26 konzultáció gyakorlati feladat
+* [x] 2021-10-26 konzultáció részvétel/videó
+* [x] 2021-10-26 konzultáció gyakorlati feladat
 * [ ] 2021-10-28 konzultáció részvétel/videó
 * [ ] 2021-10-28 konzultáció gyakorlati feladat
 * [ ] 2021-10-29 konzultáció részvétel/videó

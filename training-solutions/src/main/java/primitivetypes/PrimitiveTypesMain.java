@@ -23,5 +23,23 @@ public class PrimitiveTypesMain {
         System.out.println(h);
         System.out.println(i);
         System.out.println(j);
+
+        boolean k = true; // típusnak megfelelő értékadás
+        Boolean l = true; // autoboxing
+        boolean m = Boolean.valueOf(true); // autounboxing
+        Boolean n = Boolean.valueOf(true); // típusnak megfelelő értékadás
+        boolean o = Boolean.parseBoolean("TrUe"); // típusnak megfelelő értékadás
+        Boolean p = Boolean.parseBoolean("TrUe"); // autoboxing
+        boolean q = Boolean.parseBoolean("TreU"); // típusnak megfelelő értékadás
+        Boolean r = Boolean.parseBoolean("TreU"); // autoboxing
+
+        System.out.println(k);
+        System.out.println(l);
+        System.out.println(m);
+        System.out.println(n);
+        System.out.println(o);
+        System.out.println(p);
+        System.out.println(q);
+        System.out.println(r);
     }
 }

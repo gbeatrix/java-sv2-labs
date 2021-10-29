@@ -17,4 +17,10 @@ public class Conversion {
         }
         return result;
     }
+
+    public int getFirstDecimal(double num){
+        double frac = num - (int)num;
+        frac *= 10;
+        return (int)frac;
+    }
 }

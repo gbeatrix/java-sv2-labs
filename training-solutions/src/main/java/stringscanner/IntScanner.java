@@ -8,13 +8,10 @@ public class IntScanner {
     public String convertInts(String ints){
         Scanner intScanner = new Scanner(ints).useDelimiter(";");
         List<Integer> bigInts = new ArrayList<>();
-        for (int i = 0; i < 1; i++) {
-            if(intScanner.hasNextInt()){
-                int k = intScanner.nextInt();
-                if(k>100){
-                    bigInts.add(k);
-                }
-                i--;
+        for (;intScanner.hasNextInt();) {
+            int k = intScanner.nextInt();
+            if(k>100){
+                bigInts.add(k);
             }
         }
 

@@ -16,5 +16,21 @@ public class GentlemanTest {
 
         // Then
         assertThat(result, equalTo("Hello John Doe"));
+
+        /*
+        Hibás program:
+        java.lang.AssertionError:
+        Expected: "Hello John Doe"
+             but: was "Hi John Doe"
+        Expected :Hello John Doe
+        Actual   :Hi John Doe
+
+        Hibás teszteset:
+        java.lang.AssertionError:
+        Expected: "Hello Jane Doe"
+             but: was "Hello John Doe"
+        Expected :Hello Jane Doe
+        Actual   :Hello John Doe
+         */
     }
 }

@@ -28,4 +28,16 @@ public class GentlemanTest {
         Actual   :Hello Jane Doe
          */
     }
+
+    @Test
+    void testAnonymous() {
+        // Given
+        Gentleman gentleman = new Gentleman();
+
+        // When
+        String result = gentleman.sayHello(null);
+
+        // Then
+        assertEquals("Hello Anonymous", result);
+    }
 }

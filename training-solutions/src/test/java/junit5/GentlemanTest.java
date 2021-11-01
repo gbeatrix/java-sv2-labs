@@ -15,5 +15,17 @@ public class GentlemanTest {
 
         // Then
         assertEquals("Hello John Doe", result);
+
+        /*
+        Hibás program:
+        org.opentest4j.AssertionFailedError:
+        Expected :Hello John Doe
+        Actual   :HelloJohn Doe
+
+        Hibás teszteset:
+        org.opentest4j.AssertionFailedError:
+        Expected :Hello John Doe
+        Actual   :Hello Jane Doe
+         */
     }
 }

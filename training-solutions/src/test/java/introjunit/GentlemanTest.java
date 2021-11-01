@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class GentlemanTest {
     @Test
-    public void testGentleman(){
+    public void testGentleman() {
         // Given
         Gentleman gentleman = new Gentleman();
 
@@ -32,5 +32,17 @@ public class GentlemanTest {
         Expected :Hello Jane Doe
         Actual   :Hello John Doe
          */
+    }
+
+    @Test
+    public void testAnonymous() {
+        // Given
+        Gentleman gentleman = new Gentleman();
+
+        // When
+        String result = gentleman.sayHello(null);
+
+        // Then
+        assertThat(result, equalTo("Hello Anonymous"));
     }
 }

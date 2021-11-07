@@ -20,7 +20,7 @@ fogtok tanulni a vezérlési szerkezetekről.
 * [x] [Ciklusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709839-ciklusok)
 * [x] Ciklusok gyakorlati feladat
 * [x] [Haladó vezérlési szerkezetek videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709794-halado-vezerlesi-szerkezetek)
-* [ ] Haladó vezérlési szerkezetek gyakorlati feladat
+* [x] Haladó vezérlési szerkezetek gyakorlati feladat
 
 ## Konzultációk
 

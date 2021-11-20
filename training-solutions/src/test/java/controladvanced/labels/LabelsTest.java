@@ -11,6 +11,6 @@ class LabelsTest {
         int[][] result = labels.getTableOfNumbers(10);
         assertEquals(12, result[5][5]);
         assertEquals(12, result[4][6]);
-        assertEquals(12, result[0][10]);
+        assertEquals(11, result[0][9]);
     }
 }

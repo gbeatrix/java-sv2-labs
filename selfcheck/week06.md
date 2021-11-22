@@ -32,7 +32,7 @@ Ezen a héten a kivétel- és fájlkezelést fogjátok alapszinten megismerni.
 * [x] Fájl írása gyakorlati feladat
 * [x] [Fájl írásának tesztelése JUnit 4 használatával videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28178049-fajl-irasanak-tesztelese-junit-4-hasznalataval)  
 * [x] [Fájl írásának tesztelése JUnit 5 használatával videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28178063-fajl-irasanak-tesztelese-junit-5-hasznalataval)
-* [ ] Fájl írásának tesztelése JUnit 5 használatával gyakorlati feladat
+* [x] Fájl írásának tesztelése JUnit 5 használatával gyakorlati feladat
 * [x] [A finally ág videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28178086-a-finally-ag)
 * [ ] A finally ág gyakorlati feladat
 

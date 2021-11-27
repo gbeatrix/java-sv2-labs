@@ -7,8 +7,8 @@ Ezen a héten nagyrészt ismétlés következik, néhány újabb ismerettel: a p
 
 * [x] [Összegzés tétele videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/16980666-osszegzes-tetele)
 * [x] Összegzés tétele gyakorlati feladat
-* [ ] [Számlálás tétele videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/16980667-szamlalas-tetele)
-* [ ] Számlálás tétele gyakorlati feladat
+* [x] [Számlálás tétele videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/16980667-szamlalas-tetele)
+* [x] Számlálás tétele gyakorlati feladat
 * [ ] [Szélsőérték keresés tétele videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/16980670-szelsoertek-kereses-tetele)
 * [ ] Szélsőérték keresés tétele gyakorlati feladat
 * [ ] [Eldöntés tétele videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/16980673-eldontes-tetele)

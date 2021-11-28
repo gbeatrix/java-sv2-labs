@@ -38,8 +38,8 @@ Ezen a héten nagyrészt ismétlés következik, néhány újabb ismerettel: a p
 * [x] Metódus hívások láncolása gyakorlati feladat
 * [x] [Metódusnév túlterhelés videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525928-metodusnev-tulterheles)
 * [x] Metódusnév túlterhelés gyakorlati feladat
-* [ ] [Statikus attribútumok és metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525936-statikus-attributumok-es-metodusok)
-* [ ] Statikus attribútumok és metódusok gyakorlati feladat
+* [x] [Statikus attribútumok és metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525936-statikus-attributumok-es-metodusok)
+* [x] Statikus attribútumok és metódusok gyakorlati feladat
   
 ## Konstruktorok és inicializátorok
 

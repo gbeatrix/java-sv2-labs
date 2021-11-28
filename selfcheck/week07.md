@@ -28,8 +28,8 @@ Ezen a héten nagyrészt ismétlés következik, néhány újabb ismerettel: a p
 * [x] JavaBeans objektumok gyakorlati feladat
 * [x] [Metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525772-metodusok)
 * [x] Metódusok gyakorlati feladat
-* [ ] [Értékmásolás szerinti paraméterátadás videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525776-ertekmasolas-szerinti-parameteratadas)
-* [ ] Értékmásolás szerinti paraméterátadás gyakorlati feladat
+* [x] [Értékmásolás szerinti paraméterátadás videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525776-ertekmasolas-szerinti-parameteratadas)
+* [x] Értékmásolás szerinti paraméterátadás gyakorlati feladat
 * [ ] [Metódus paraméterek és visszatérési értékek videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525904-metodus-parameterek-es-visszateresi-ertekek)
 * [ ] Metódus paraméterek és visszatérési értékek gyakorlati feladat
 * [ ] [Változó hosszúságú paraméterlista videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29525916-valtozo-hosszusagu-parameterlista)

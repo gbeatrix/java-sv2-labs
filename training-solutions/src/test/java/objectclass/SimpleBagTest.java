@@ -27,7 +27,7 @@ class SimpleBagTest {
         bag.putItem(new Beer("Borsodi", 239));
         //Then
         assertFalse(bag.isEmpty());
-        assertEquals(3, bag.size());
+        assertEquals(4, bag.size());
 
     }
 
@@ -40,6 +40,7 @@ class SimpleBagTest {
         bag.putItem(new Book("Rejtő Jenő", "Az ellopott cirkáló"));
         bag.putItem(new Beer("Borsodi", 239));
         while (bag.hasNext()) {
+            bag.next();
         }
         //Then
         assertEquals(2, bag.getCursor());

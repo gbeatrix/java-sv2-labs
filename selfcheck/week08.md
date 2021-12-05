@@ -13,8 +13,8 @@ fogtok megismerkedni.
 * [x] Statikus és dinamikus típus gyakorlati feladat
 * [x] [Object ősosztály videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29592426-object-ososztaly)
 * [x] Object ősosztály gyakorlati feladat
-* [ ] [Attribútumok öröklődése videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29592433-attributumok-oroklodese)
-* [ ] Attribútumok öröklődése gyakorlati feladat
+* [x] [Attribútumok öröklődése videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29592433-attributumok-oroklodese)
+* [x] Attribútumok öröklődése gyakorlati feladat
 * [ ] [Metódusok öröklődése videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29592443-metodusok-oroklodese)
 * [ ] Metódusok öröklődése gyakorlati feladat
   
@@ -29,7 +29,7 @@ fogtok megismerkedni.
 * [x] 2021-11-29 konzultáció gyakorlati feladat
 * [x] 2021-11-30 konzultáció részvétel/videó
 * [x] 2021-11-30 konzultáció gyakorlati feladat
-* [ ] 2021-12-02 konzultáció részvétel/videó
-* [ ] 2021-12-02 konzultáció gyakorlati feladat
-* [ ] 2021-12-03 konzultáció részvétel/videó
-* [ ] 2021-12-03 konzultáció gyakorlati feladat
+* [x] 2021-12-02 konzultáció részvétel/videó
+* [x] 2021-12-02 konzultáció gyakorlati feladat
+* [x] 2021-12-03 konzultáció részvétel/videó
+* [x] 2021-12-03 konzultáció gyakorlati feladat

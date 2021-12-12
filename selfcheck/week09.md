@@ -13,8 +13,8 @@ fogtok megismerkedni.
 * [x] Dependency inversion gyakorlati feladat
 * [x] [Default interfész metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593845-default-interfesz-metodusok)
 * [x] Default interfész metódusok gyakorlati feladat
-* [ ] [Statikus interfész metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593855-statikus-interfesz-metodusok)
-* [ ] Statikus interfész metódusok gyakorlati feladat
+* [x] [Statikus interfész metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593855-statikus-interfesz-metodusok)
+* [x] Statikus interfész metódusok gyakorlati feladat
 * [x] [Interfészek és az öröklődés viszonya videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593869-interfeszek-es-az-oroklodes-viszonya)
 * [x] Interfészek és az öröklődés viszonya gyakorlati feladat
 * [x] [Absztrakt metódusok implementálása felsorolásos típusokban videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593878-absztrakt-metodusok-implementalasa-felsorolasos-tipusokban)

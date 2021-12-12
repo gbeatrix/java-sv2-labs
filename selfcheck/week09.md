@@ -28,8 +28,8 @@ fogtok megismerkedni.
 * [x] Polimorfizmus gyakorlati feladat
 * [x] [Dinamikus kötés videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593943-dinamikus-kotes)
 * [x] Dinamikus kötés gyakorlati feladat
-* [ ] [is-a has-a kapcsolatok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593950-is-a-has-a-kapcsolatok)
-* [ ] is-a has-a kapcsolatok gyakorlati feladat
+* [x] [is-a has-a kapcsolatok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593950-is-a-has-a-kapcsolatok)
+* [x] is-a has-a kapcsolatok gyakorlati feladat
 
 ## Konzultációk
 

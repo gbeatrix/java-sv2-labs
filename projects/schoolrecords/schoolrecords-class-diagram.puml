@@ -1,0 +1,112 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+hide circle
+skinparam classAttributeIconSize 0
+skinparam LineType ortho
+skinparam Nodesep 100
+skinparam shadowing false
+
+package schoolrecords {
+
+class Subject {
+    -subjectName : String
+    +Subject(subjectName : String)
+    +getSubjectName() : String
+    -isEmpty(str : String) : boolean
+}
+
+class Tutor{
+    -name : String
+    -taughtSubjects : List<Subject>
+    +Tutor(name : String, taughtSubjects : List<Subject>)
+    +tutorTeachingSubject(subject : Subject) : boolean
+    -isEmpty(str : String) : boolean
+}
+
+class Mark {
+    -markType : MarkType
+    -subject : Subject
+    -tutor : Tutor
+    +Mark(markType : MarkType, subject Subject, tutor : Tutor)
+    +Mark(markType : String, subject Subject, tutor : Tutor)
+    +getMarkType() : MarkType
+    +getSubject() : Subject
+    +getTutor() : Tutor
+    +toString() : String
+    -isEmpty(str : String) : boolean
+}
+
+enum MarkType {
+    {field}+A : MarkType = MarkType(5, "excellent")
+    {field}+B : MarkType = MarkType(4, "very good")
+    {field}+C : MarkType = MarkType(3, "improvement needed")
+    {field}+D : MarkType = MarkType(2, "close fail")
+    {field}+F : MarkType = MarkType(1, "fail")
+    -grade : int
+    -evaluation : String
+    -MarkType(grade : int, evaluation : String)
+    +getGrade() : int
+    +getEvaluation() : String
+}
+
+class Student {
+    -name : String
+    -marks : List<Mark>
+    +Student(name : String)
+    +getName() : String
+    +grading(mark : Mark) : void
+    +calculateAverage() : double
+    +calculateSubjectAverage(subject : Subject) : double
+    +toString() : String
+    -isEmpty(str : String) : boolean
+}
+
+class ClassRecords {
+    -className : String
+    -random : Random
+    -students : List<Student>
+    +ClassRecords(className : String, random : Random)
+    +getClassName() : String
+    +addStudent(student : Student) : boolean
+    +removeStudent(student : Student) : boolean
+    +calculateClassAverage() : double
+    +calculateClassAverageBySubject(subject : Subject) : double
+    +findStudentByName(name : String) : Student
+    +repetition() : Student
+    +listStudyResults() : List<StudyResultByName>
+    +listStudentNames() : String
+    -isEmpty(str : String) : boolean
+}
+
+class StudyResultByName {
+    -studentName : String
+    -studyAverage : double
+    +StudyResultByName(studentName : String, studyAverage : double)
+    +getStudyAverage() : double
+    +getStudentName() : String
+    -isEmpty(str : String) : boolean
+}
+
+class SchoolRecordsController {
+    -tutors : List<Tutor>
+    -subjects : List<Subject>
+    -classRecords : ClassRecords
+    +{static}main(args : String[]) : void
+}
+
+Subject -r-* Tutor
+Subject -d-* Mark
+Tutor --* Mark
+Student -r-* ClassRecords
+Mark -d-* Student
+Mark *-r- MarkType
+ClassRecords --> StudyResultByName
+Tutor --* SchoolRecordsController
+Subject --* SchoolRecordsController
+ClassRecords -r-* SchoolRecordsController
+}
+
+'remove MarkType
+'remove StudyResultByName
+@enduml

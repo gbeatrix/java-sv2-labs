@@ -10,7 +10,7 @@ pontossággal. A jegyeik ki is listázhatók a tesztesetekben megadott formában
 
 A `schoolrecords` csomagba dolgozz!
 
-![UML osztálydiagram](images/schoolrecords-class-diagram.png)
+![UML osztálydiagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/gbeatrix/java-sv2-labs/master/projects/schoolrecords/schoolrecords-class-diagram.puml)
 
 > Az osztálydiagramon egyes osztályoknál feltüntetett `equals()` metódusokat ne implementáljuk!
 

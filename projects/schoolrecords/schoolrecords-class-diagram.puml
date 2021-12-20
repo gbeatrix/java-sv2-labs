@@ -20,6 +20,7 @@ class Tutor{
     -name : String
     -taughtSubjects : List<Subject>
     +Tutor(name : String, taughtSubjects : List<Subject>)
+    +getName() : String
     +tutorTeachingSubject(subject : Subject) : boolean
     -isEmpty(str : String) : boolean
 }
@@ -34,7 +35,6 @@ class Mark {
     +getSubject() : Subject
     +getTutor() : Tutor
     +toString() : String
-    -isEmpty(str : String) : boolean
 }
 
 enum MarkType {

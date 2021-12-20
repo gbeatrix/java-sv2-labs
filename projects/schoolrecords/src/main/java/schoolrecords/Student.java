@@ -70,22 +70,22 @@ public class Student {
         return this.name.equals(student.name);
     }
 
-    public List<Integer> getGrades() {
-        List<Integer> grades = new ArrayList<>(marks.size());
+    public List<Double> getGrades() {
+        List<Double> grades = new ArrayList<>(marks.size());
         for (Mark mark : marks) {
-            grades.add(mark.getMarkType().getGrade());
+            grades.add((double) mark.getMarkType().getGrade());
         }
         return grades;
     }
 
-    public List<Integer> getGrades(Subject subject) {
+    public List<Double> getGrades(Subject subject) {
         if (subject == null) {
             throw new NullPointerException("Subject must be not null.");
         }
-        List<Integer> grades = new ArrayList<>();
+        List<Double> grades = new ArrayList<>();
         for (Mark mark : marks) {
             if (mark.getSubject().equalTo(subject)) {
-                grades.add(mark.getMarkType().getGrade());
+                grades.add((double) mark.getMarkType().getGrade());
             }
         }
         return grades;

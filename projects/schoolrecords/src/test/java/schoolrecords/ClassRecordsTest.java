@@ -98,7 +98,7 @@ class ClassRecordsTest {
         //Given
         Subject geography = new Subject("földrajz");
         //Then
-        assertEquals(3.0, classRecords.calculateClassAverageBySubject(geography));
+        assertEquals(2.75, classRecords.calculateClassAverageBySubject(geography));
     }
 
     @Test

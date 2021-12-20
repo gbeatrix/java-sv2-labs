@@ -7,14 +7,14 @@ public class Math {
         return ((long) (value * java.lang.Math.pow(10, precision))) / java.lang.Math.pow(10d, precision);
     }
 
-    public double getAvg(List<Integer> values) {
+    public double getAvg(List<Double> values) {
         if (values.isEmpty()) {
             return 0;
         }
-        long sum = 0;
-        for (int value : values) {
+        double sum = 0;
+        for (double value : values) {
             sum += value;
         }
-        return ((double) sum) / values.size();
+        return sum / values.size();
     }
 }

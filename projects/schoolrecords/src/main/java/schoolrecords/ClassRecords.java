@@ -48,7 +48,7 @@ public class ClassRecords {
 
     public double calculateClassAverage() {
         validateClass();
-        List<Integer> grades = getGrades();
+        List<Double> grades = getGrades();
         validateGrades(grades);
         Math math = new Math();
         return math.floor(math.getAvg(grades), 2);
@@ -56,7 +56,7 @@ public class ClassRecords {
 
     public double calculateClassAverageBySubject(Subject subject) {
         validateClass();
-        List<Integer> grades = getGrades(subject);
+        List<Double> grades = getGrades(subject);
         validateGrades(grades);
         Math math = new Math();
         return math.floor(math.getAvg(grades), 2);
@@ -105,18 +105,24 @@ public class ClassRecords {
         return str == null || str.isBlank();
     }
 
-    private List<Integer> getGrades() {
-        List<Integer> grades = new ArrayList<>();
+    private List<Double> getGrades() {
+        List<Double> grades = new ArrayList<>(students.size());
         for (Student student : students) {
-            grades.addAll(student.getGrades());
+            double studentAvg = student.calculateAverage();
+            if (studentAvg > .5) {
+                grades.add(studentAvg);
+            }
         }
         return grades;
     }
 
-    private List<Integer> getGrades(Subject subject) {
-        List<Integer> grades = new ArrayList<>();
+    private List<Double> getGrades(Subject subject) {
+        List<Double> grades = new ArrayList<>(students.size());
         for (Student student : students) {
-            grades.addAll(student.getGrades(subject));
+            double studentAvg = student.calculateSubjectAverage(subject);
+            if (studentAvg > .5) {
+                grades.add(studentAvg);
+            }
         }
         return grades;
     }
@@ -133,7 +139,7 @@ public class ClassRecords {
         }
     }
 
-    private void validateGrades(List<Integer> grades) {
+    private void validateGrades(List<Double> grades) {
         if (grades.isEmpty()) {
             throw new ArithmeticException("No marks present, average calculation aborted!");
         }

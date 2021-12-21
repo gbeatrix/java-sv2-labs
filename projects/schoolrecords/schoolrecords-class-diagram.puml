@@ -93,6 +93,7 @@ class SchoolRecordsController {
     -subjects : List<Subject>
     -classRecords : ClassRecords
     +{static}main(args : String[]) : void
+    +initSchool() : void
 }
 
 Subject -r-* Tutor

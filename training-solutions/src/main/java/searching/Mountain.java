@@ -1,0 +1,20 @@
+package searching;
+
+import java.util.Arrays;
+
+public class Mountain {
+    private int[] heights;
+
+    public Mountain(int[] heights) {
+        for (int i = 1; i < heights.length; i++) {
+            if(heights[i-1] > heights[i]){
+                throw new IllegalArgumentException("Array must be sorted");
+            }
+        }
+        this.heights = heights;
+    }
+
+    public boolean searchPike(Pike pike) {
+        return 0 <= Arrays.binarySearch(heights, pike.getHeight());
+    }
+}

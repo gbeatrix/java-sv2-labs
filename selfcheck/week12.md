@@ -25,7 +25,7 @@ Ezen a héten a kollekciókkal fogtok részletesebben megismerkedni.
 * [x] [Map videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/10769620-map)
 * [x] Map gyakorlati feladat
 * [x] [Autoboxing használata kollekcióknál videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/10769619-autoboxing-hasznalata-kollekcioknal)
-* [ ] Autoboxing használata kollekcióknál gyakorlati feladat
+* [x] Autoboxing használata kollekcióknál gyakorlati feladat
 
 ## Műveletek kollekciókkal
 
@@ -38,9 +38,9 @@ Ezen a héten a kollekciókkal fogtok részletesebben megismerkedni.
 * [x] [Rendezés videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/10769624-rendezes)
 * [x] Rendezés gyakorlati feladat
 * [x] [Collections osztály (keresésen, rendezésen felüli metódusok) videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/10769625-collections-osztaly-keresesen-rendezesen-feluli-metodusok)
-* [ ] Collections osztály (keresésen, rendezésen felüli metódusok) gyakorlati feladat
+* [x] Collections osztály (keresésen, rendezésen felüli metódusok) gyakorlati feladat
 * [x] [A clone() metódus, deep clone videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/10769626-a-clone-metodus-deep-clone)
-* [ ] A clone() metódus, deep clone gyakorlati feladat
+* [x] A clone() metódus, deep clone gyakorlati feladat
 
 ## Konzultációk
 

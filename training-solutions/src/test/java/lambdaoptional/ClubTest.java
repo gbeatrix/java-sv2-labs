@@ -8,9 +8,11 @@ import java.util.Collections;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClubTest {
+
     @Test
     void testCreateMember() {
         Member member = new Member("John Doe", Arrays.asList("Java", "OOP"), Gender.MALE);
+
         assertEquals("John Doe", member.getName());
         assertEquals(Arrays.asList("Java", "OOP"), member.getSkills());
         assertEquals(Gender.MALE, member.getGender());
@@ -31,8 +33,8 @@ class ClubTest {
     }
 
     @Test
-    void testAvg() {
-        assertFalse(new Club(Collections.emptyList()).averageNumberOfSkills().isPresent());
+    void testAverage() {
+        assertEquals(false, new Club(Collections.emptyList()).averageNumberOfSkills().isPresent());
 
         Club club = new Club(Arrays.asList(
                 new Member("John Doe", Arrays.asList("Java", "OOP"), Gender.MALE),
@@ -40,7 +42,6 @@ class ClubTest {
                 new Member("James Doe", Arrays.asList("Python", "Java", "OOP"), Gender.MALE),
                 new Member("Janet Doe", Arrays.asList("JavaScript", "scripting"), Gender.MALE)
         ));
-
 
         assertEquals(2.25, club.averageNumberOfSkills().get());
     }

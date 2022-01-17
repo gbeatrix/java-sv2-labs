@@ -5,9 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BankAccountsTest {
+
     @Test
     void testListBankAccountsByAccountNumber() {
         BankAccounts accounts = new BankAccounts(Arrays.asList(
@@ -16,9 +17,7 @@ class BankAccountsTest {
                 new BankAccount("2", "John Doe", 100.0),
                 new BankAccount("5", "John Doe", 100.0),
                 new BankAccount("4", "John Doe", 100.0)
-
         ));
-
         List<BankAccount> sorted = accounts.listBankAccountsByAccountNumber();
 
         assertEquals("1", sorted.get(0).getAccountNumber());
@@ -33,9 +32,7 @@ class BankAccountsTest {
                 new BankAccount("2", "John Doe", -102.0),
                 new BankAccount("5", "John Doe", 200.0),
                 new BankAccount("4", "John Doe", 90.0)
-
         ));
-
         List<BankAccount> sorted = accounts.listBankAccountsByBalance();
 
         assertEquals(90.0, sorted.get(0).getBalance());
@@ -50,9 +47,7 @@ class BankAccountsTest {
                 new BankAccount("2", "John Doe", -102.0),
                 new BankAccount("5", "John Doe", 200.0),
                 new BankAccount("4", "John Doe", 90.0)
-
         ));
-
         List<BankAccount> sorted = accounts.listBankAccountsByBalanceDesc();
 
         assertEquals(105.0, sorted.get(1).getBalance());
@@ -68,9 +63,7 @@ class BankAccountsTest {
                 new BankAccount("1", "Alphonse Doe", 105.0),
                 new BankAccount("5", null, 200.0),
                 new BankAccount("3", "John Doe", 90.0)
-
         ));
-
         List<BankAccount> sorted = accounts.listBankAccountsByNameThenAccountNumber();
 
         assertEquals(null, sorted.get(0).getNameOfOwner());

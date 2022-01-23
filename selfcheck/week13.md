@@ -9,7 +9,7 @@ Ezen a héten a lambda kifejezések és a streamek használatával fogtok részl
 * [x] Bevezetés a lambda kifejezések használatába gyakorlati feladat
 * [x] [Bevezetés az Optional osztály használatába videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31319354-bevezetes-az-optional-osztaly-hasznalataba)
 * [x] Bevezetés az Optional osztály használatába gyakorlati feladat
-* [ ] [Bevezetés a streamek használatába videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31315582-bevezetes-a-streamek-hasznalataba)
+* [x] [Bevezetés a streamek használatába videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31315582-bevezetes-a-streamek-hasznalataba)
 * [ ] [Bevezezés a streamek használatába - gyakorlat - komplex példa videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31315951-bevezezes-a-streamek-hasznalataba-gyakorlat-komplex-pelda)
 * [ ] [Bevezetés a streamek használatába - gyakorlat - források videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31316404-bevezetes-a-streamek-hasznalataba-gyakorlat-forrasok)
 * [ ] [Bevezetés a streamek használatába - gyakorlat - közbülső és lezáró műveletek videó](https://e-learning.training360.com/courses/take/java-se-halado-koll/lessons/31319324-bevezetes-a-streamek-hasznalataba-gyakorlat-kozbulso-es-lezaro-muveletek)

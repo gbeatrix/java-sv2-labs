@@ -14,7 +14,7 @@ public class Mountain {
         this.heights = heights;
     }
 
-    public boolean searchPike(Pike pike) {
-        return 0 <= Arrays.binarySearch(heights, pike.getHeight());
+    public boolean searchPeak(Peak peak) {
+        return 0 <= Arrays.binarySearch(heights, peak.getHeight());
     }
 }

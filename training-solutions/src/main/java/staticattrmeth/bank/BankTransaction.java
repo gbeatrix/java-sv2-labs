@@ -12,7 +12,7 @@ public class BankTransaction {
 
     public BankTransaction(long transactionValue) {
         if (transactionValue < MIN_TRANSACTION_VALUE || transactionValue > MAX_TRANSACTION_VALUE) {
-            throw new IllegalArgumentException("Invalid transaction value: " + transactionValue);
+            throw new IllegalArgumentException("This transaction cannot be accepted! " + transactionValue);
         }
         this.transactionValue = transactionValue;
         countOfTransactions++;

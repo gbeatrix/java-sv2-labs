@@ -5,19 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class VowelsTest {
+
     @Test
-    void testVowels() {
-        assertEquals(0, new Vowels().getNumberOfVowels(""));
-        assertEquals(1, new Vowels().getNumberOfVowels("a"));
-        assertEquals(0, new Vowels().getNumberOfVowels("b"));
+    void testIsPalindrome() {
+        Vowels vowels = new Vowels();
 
-        String word = "ÁRVÍZTŰRŐ tükörfúrógép";
-        assertEquals(9, new Vowels().getNumberOfVowels(word));
-
-        word = "Megszentségteleníthetetlenségeskedéseitekért";
-        assertEquals(17, new Vowels().getNumberOfVowels(word));
-
-        word = "abcdefghijklmnopqrstuvwxyz";
-        assertEquals(5, new Vowels().getNumberOfVowels(word));
+        assertEquals(0, vowels.getNumberOfVowels(""));
+        assertEquals(1, vowels.getNumberOfVowels("a"));
+        assertEquals(0, vowels.getNumberOfVowels("b"));
+        assertEquals(9, vowels.getNumberOfVowels("árvíztűrő tükörfúrógép"));
     }
 }

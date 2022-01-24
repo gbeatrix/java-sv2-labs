@@ -5,16 +5,9 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class HeightTest {
-    @Test
-    void myTestCountChildrenWithHeightGreaterThan() {
-        List<Integer> heights = Arrays.asList(119, 117, 120, 125, 123, 117, 121);
-        int minHeight = 120;
-        int result = new Height().countChildrenWithHeightGreaterThan(heights, minHeight);
-        assertEquals(3, result);
-    }
 
     @Test
     void testCountChildrenWithHeightGreaterThan() {

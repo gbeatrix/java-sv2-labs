@@ -8,12 +8,14 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TwoLettersTest {
+
     @Test
-    void testTwoLetters(){
-        List<String> words = Arrays.asList("április", "június", "szeptember", "november");
-        List<String> result = new TwoLetters().getFirstTwoLetters(words);
-        assertEquals(4, result.size());
-        assertEquals("áp", result.get(0));
-        assertEquals("no", result.get(3));
+    void testGetFirstTwoLetters() {
+        TwoLetters twoLetters = new TwoLetters();
+        List<String> words = Arrays.asList("alma", "körte", "barack", "eper", "szilva");
+        List<String> expected = Arrays.asList("al", "kö", "ba", "ep", "sz");
+        List<String> result = twoLetters.getFirstTwoLetters(words);
+
+        assertEquals(result, expected);
     }
 }

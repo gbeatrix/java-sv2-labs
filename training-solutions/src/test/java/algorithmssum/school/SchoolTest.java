@@ -8,11 +8,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SchoolTest {
-    @Test
-    void myTestSchool() {
-        List<Integer> headcounts = Arrays.asList(28, 31, 30, 29, 32);
-        assertEquals(150, new School().getNumberOfStudents(headcounts));
-    }
 
     @Test
     void testGetNumberOfStudents() {

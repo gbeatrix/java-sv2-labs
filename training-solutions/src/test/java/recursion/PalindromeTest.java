@@ -5,16 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PalindromeTest {
+
     @Test
-    void testPalindrome() {
-        assertTrue(new Palindrome().isPalindrome(""));
-        assertTrue(new Palindrome().isPalindrome("x"));
-        assertFalse(new Palindrome().isPalindrome("no"));
+    void testIsPalindrome() {
+        Palindrome palindrome = new Palindrome();
 
-        String word = "Indul a görög aludni.";
-        assertFalse(new Palindrome().isPalindrome(word));
-
-        word = "indulagörögaludni";
-        assertTrue(new Palindrome().isPalindrome(word));
+        assertEquals(true, palindrome.isPalindrome("racecar"));
+        assertEquals(false, palindrome.isPalindrome("abc"));
+        assertEquals(true, palindrome.isPalindrome("a"));
+        assertEquals(true, palindrome.isPalindrome(""));
     }
 }

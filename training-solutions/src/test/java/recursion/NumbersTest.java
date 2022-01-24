@@ -5,20 +5,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NumbersTest {
+
     @Test
-    void testNumbers() {
-        assertEquals(0, new Numbers().getSum(new int[]{}));
-        assertEquals(1, new Numbers().getSum(new int[]{1}));
+    void testGetSum() {
+        Numbers numbers = new Numbers();
 
-        int[] numbers = new int[10];
-        for (int i = 0; i < 10; i++) {
-            numbers[i] = i + 1;
-        }
-        assertEquals(55, new Numbers().getSum(numbers));
-
-        for (int i = 1; i < 10; i++) {
-            numbers[i] = -numbers[i - 1];
-        }
-        assertEquals(0, new Numbers().getSum(numbers));
+        assertEquals(10, numbers.getSum(new int[]{1, 2, 3, 4}));
+        assertEquals(2, numbers.getSum(new int[]{2}));
+        assertEquals(0, numbers.getSum(new int[]{}));
     }
 }

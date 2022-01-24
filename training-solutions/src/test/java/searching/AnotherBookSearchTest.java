@@ -22,11 +22,11 @@ class AnotherBookSearchTest {
         //Given
         BookSearch search = new BookSearch(books);
         //When
-        Book book = search.findBookByAuthorTitle("Anna Mangan", "Az elfeledett mackó");
+        Book book = search.findBookByAuthorTitle("Illés Andrea", "Királylányos könyv");
         //Then
-        assertEquals(1172, book.getId());
-        assertEquals("Anna Mangan", book.getAuthor());
-        assertEquals("Az elfeledett mackó", book.getTitle());
-        assertEquals("1172 Anna Mangan Az elfeledett mackó", book.toString());
+        assertEquals(1073, book.getId());
+        assertEquals("Illés Andrea", book.getAuthor());
+        assertEquals("Királylányos könyv", book.getTitle());
+        assertEquals("1073 Illés Andrea Királylányos könyv", book.toString());
     }
 }

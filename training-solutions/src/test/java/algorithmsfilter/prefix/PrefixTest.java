@@ -8,12 +8,15 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrefixTest {
+
     @Test
-    void testPrefix(){
-        List<String> words = Arrays.asList("megír", "meglát", "elront", "rácsodálkozik", "megold");
-        List<String> result = new Prefix().getWordsStartWith(words, "meg");
-        assertEquals(3, result.size());
-        assertTrue(result.contains("megold"));
-        assertFalse(result.contains("elront"));
+    void testGetWordsStartWith() {
+        Prefix word = new Prefix();
+        List<String> words = Arrays.asList("király", "királynő", "macska", "kislány", "kutya", "kilogramm");
+        List<String> expected = word.getWordsStartWith(words, "ki");
+
+        assertEquals(4, expected.size());
+        assertTrue(expected.contains("kislány"));
+        assertFalse(expected.contains("kutya"));
     }
 }

@@ -72,7 +72,7 @@ class AccountTest {
         double amount = 10;
         Account account = new Account("a", balance);
 
-        assertEquals(290d, account.subtract(amount));
+        assertEquals(290, account.subtract(amount));
     }
 
     @Test
@@ -102,7 +102,7 @@ class AccountTest {
         double amount = 10;
         Account account = new Account("a", balance);
 
-        assertEquals(310d, account.deposit(amount));
+        assertEquals(310, account.deposit(amount));
     }
 
     @Test

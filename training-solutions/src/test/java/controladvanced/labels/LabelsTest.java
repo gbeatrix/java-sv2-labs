@@ -2,15 +2,20 @@ package controladvanced.labels;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LabelsTest {
+
     @Test
     void testGetTableOfNumbers() {
+        // Given
         Labels labels = new Labels();
-        int[][] result = labels.getTableOfNumbers(10);
-        assertEquals(12, result[5][5]);
-        assertEquals(12, result[4][6]);
-        assertEquals(11, result[0][9]);
+
+        // When
+        int[][] table = labels.getTableOfNumbers(6);
+
+        // Then
+        assertEquals(5, table[2][1]);
+        assertEquals(10, table[4][4]);
     }
 }

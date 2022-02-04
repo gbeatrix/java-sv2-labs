@@ -1,6 +1,8 @@
 package activity;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
@@ -60,8 +62,7 @@ public class Track {
         return List.copyOf(trackPoints);
     }
 
-    public void loadFromGpx(InputStream is) {
-        Scanner scanner = new Scanner(is);
+    public void loadFromGpx(Scanner scanner){
         Coordinate coordinate = null;
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine().trim();
@@ -76,4 +77,17 @@ public class Track {
             }
         }
     }
+
+    public void loadFromGpx(InputStream is) {
+        loadFromGpx(new Scanner(is));
+    }
+
+    public void loadFromGpx(Path path) {
+        try (Scanner scanner = new Scanner(path)) {
+            loadFromGpx(scanner);
+        } catch (IOException e) {
+            throw new IllegalStateException("Error reading file");
+        }
+    }
 }
+

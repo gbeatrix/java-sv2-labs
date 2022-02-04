@@ -19,13 +19,12 @@ public class ExamService {
             maxPractice = scanner.nextInt();
             scanner.nextLine();
             while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                String name = line.split(";")[0];
-                int theory = Integer.parseInt(line.split("((^.*;)|( ))")[1]);
-                int practice = Integer.parseInt(line.split("((^.*;)|( ))")[2]);
+                String name = scanner.findInLine(".*;").replace(";", "");
+                int theory = scanner.nextInt();
+                int practice = scanner.nextInt();
                 results.put(name, new ExamResult(theory, practice));
+                scanner.nextLine();
             }
-
         } catch (IOException e) {
             throw new IllegalArgumentException("Cannot read file: " + path.toString().replace("/", "\\"), e);
         }

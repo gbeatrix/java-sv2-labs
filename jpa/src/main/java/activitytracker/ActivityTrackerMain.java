@@ -16,9 +16,71 @@ public class ActivityTrackerMain {
     public static void main(String[] args) {
         ActivityTrackerMain program = new ActivityTrackerMain();
         program.addFirstActivities();
+        System.out.println(program.getActivityById(3));
+        program.getActivitiesFromDb().forEach(System.out::println);
     }
 
-    private void addFirstActivities() {
+    public List<Activity> getActivitiesFromDb() {
+        String sql = "SELECT * FROM activities;";
+        try (
+                Connection connection = getDataSource().getConnection();
+                PreparedStatement stmt = connection.prepareStatement(sql)
+        ) {
+            return getAllActivitiesByQuery(stmt);
+        } catch (SQLException sqlerr) {
+            throw new IllegalStateException("Error executing SELECT.", sqlerr);
+        }
+    }
+
+    private List<Activity> getAllActivitiesByQuery(PreparedStatement stmt) {
+        try (ResultSet result = stmt.executeQuery()) {
+            List<Activity> activities = new ArrayList<>();
+            while (result.next()) {
+                activities.add(new Activity(
+                        result.getInt("id"),
+                        result.getTimestamp("start_time").toLocalDateTime(),
+                        result.getString("activity_desc"),
+                        Type.valueOf(result.getString("activity_type"))
+                ));
+            }
+            return activities;
+        } catch (SQLException sqlerr) {
+            throw new IllegalStateException("Error executing SELECT.", sqlerr);
+        }
+    }
+
+    public Activity getActivityById(int id){
+        String sql = "SELECT * FROM activities WHERE id = ?;";
+        try (
+                Connection connection = getDataSource().getConnection();
+                PreparedStatement stmt = connection.prepareStatement(sql)
+        ) {
+            stmt.setInt(1, id);
+            return getFirstActivityByQuery(stmt);
+
+        } catch (SQLException sqlerr) {
+            throw new IllegalStateException("Error executing SELECT.", sqlerr);
+        }
+    }
+
+    private Activity getFirstActivityByQuery(PreparedStatement stmt) {
+        try (ResultSet result = stmt.executeQuery()) {
+            if (result.next()) {
+                 return new Activity(
+                        result.getInt("id"),
+                        result.getTimestamp("start_time").toLocalDateTime(),
+                        result.getString("activity_desc"),
+                        Type.valueOf(result.getString("activity_type"))
+                );
+            } else {
+                throw new IllegalArgumentException("Cannot find activity by query " + stmt);
+            }
+        } catch (SQLException sqlerr) {
+            throw new IllegalStateException("Error executing SELECT.", sqlerr);
+        }
+    }
+
+    public void addFirstActivities() {
         List<Activity> activities = getActivities();
         try (Connection connection = getDataSource().getConnection()) {
             createTableActivities(connection);

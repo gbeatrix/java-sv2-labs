@@ -83,6 +83,7 @@ public class ActivityTrackerMain {
     public void addFirstActivities() {
         List<Activity> activities = getActivities();
         try (Connection connection = getDataSource().getConnection()) {
+            dropTableActivities(connection);
             createTableActivities(connection);
             for (Activity activity : activities) {
                 insertActivity(connection, activity);
@@ -129,6 +130,15 @@ public class ActivityTrackerMain {
         }
     }
 
+    private void dropTableActivities(Connection connection) {
+        String sql = "DROP TABLE IF EXISTS activities";
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.execute();
+        } catch (SQLException sqlerr) {
+            throw new IllegalStateException("Cannot drop table activities.", sqlerr);
+        }
+    }
+
     private void createTableActivities(Connection connection) {
         String sql = "CREATE TABLE IF NOT EXISTS activities ("
                 + "id INT AUTO_INCREMENT,"
@@ -140,7 +150,7 @@ public class ActivityTrackerMain {
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.execute();
         } catch (SQLException sqlerr) {
-            throw new IllegalStateException("Cannot create database activities.", sqlerr);
+            throw new IllegalStateException("Cannot create table activities.", sqlerr);
         }
     }
 

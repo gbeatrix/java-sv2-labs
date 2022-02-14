@@ -12,19 +12,32 @@ public class ActivityDao {
         this.dataSource = dataSource;
     }
 
-    public void saveActivity(Activity activity){
-        String sql = "INSERT INTO activities VALUES (?, ?, ?, ?)";
+    public Activity saveActivity(Activity activity){
+        String sql = "INSERT INTO activities (start_time, activity_desc, activity_type) VALUES (?, ?, ?)";
         try (
                 Connection connection = dataSource.getConnection();
-                PreparedStatement stmt = connection.prepareStatement(sql)
+                PreparedStatement stmt = connection.prepareStatement(sql,
+                        Statement.RETURN_GENERATED_KEYS)
         ) {
-            stmt.setInt(1, activity.getId());
-            stmt.setTimestamp(2, Timestamp.valueOf(activity.getStartTime()));
-            stmt.setString(3, activity.getDesc());
-            stmt.setString(4, activity.getType().toString());
+            stmt.setTimestamp(1, Timestamp.valueOf(activity.getStartTime()));
+            stmt.setString(2, activity.getDesc());
+            stmt.setString(3, activity.getType().toString());
             stmt.executeUpdate();
+            return new Activity(getFirstGeneratedKey(stmt), activity);
         } catch (SQLException sqlerr) {
             throw new IllegalStateException("Cannot insert activity into database.", sqlerr);
+        }
+    }
+
+    private int getFirstGeneratedKey(PreparedStatement stmt) {
+        try (ResultSet rs = stmt.getGeneratedKeys()) {
+            if (rs.next()) {
+                return rs.getInt(1);
+            } else {
+                throw new SQLException("Cannot get any generated id");
+            }
+        } catch (SQLException sqlerr) {
+            throw new IllegalArgumentException("Error by insert", sqlerr);
         }
     }
 

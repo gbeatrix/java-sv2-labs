@@ -8,18 +8,20 @@ public class Activity {
     private LocalDateTime startTime;
     private String desc;
     private Type type;
-    private static int lastId = 0;
 
     public Activity(int id, LocalDateTime startTime, String desc, Type type) {
         this.id = id;
-        lastId = id;
         this.startTime = startTime;
         this.desc = desc;
         this.type = type;
     }
 
     public Activity(LocalDateTime startTime, String desc, Type type) {
-        this(lastId + 1, startTime, desc, type);
+        this(0, startTime, desc, type);
+    }
+
+    public Activity(int id, Activity other) {
+        this(id, other.startTime, other.desc, other.type);
     }
 
     public int getId() {

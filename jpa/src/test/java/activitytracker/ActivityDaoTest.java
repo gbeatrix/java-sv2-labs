@@ -15,7 +15,8 @@ import java.util.Properties;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ActivityDaoTest {
-    private ActivityDao activityDao;
+    ActivityDao activityDao;
+    List<Activity> activities;
 
     @BeforeEach
     void init() throws IOException, SQLException {
@@ -33,11 +34,8 @@ class ActivityDaoTest {
         flyway.migrate();
 
         activityDao = new ActivityDao(dataSource);
-    }
 
-    @Test
-    void testActivityDao() {
-        List<Activity> activities = new ArrayList<>();
+        activities = new ArrayList<>();
         activities.add(new Activity(LocalDateTime.of(2022, 2, 12, 5, 30), "hajnali futás", Type.RUNNING));
         activities.add(new Activity(LocalDateTime.of(2022, 2, 12, 8, 0), "reggeli edzés", Type.BASKETBALL));
         activities.add(new Activity(LocalDateTime.of(2022, 2, 12, 18, 0), "délutáni játék a gyerekekkel", Type.BASKETBALL));
@@ -46,9 +44,23 @@ class ActivityDaoTest {
         activities.add(new Activity(LocalDateTime.of(2022, 2, 13, 18, 0), "délutáni játék a gyerekekkel", Type.BASKETBALL));
 
         activities.forEach(activityDao::saveActivity);
+    }
 
-        assertEquals(activities.get(2), activityDao.findActivityById(3L));
+    @Test
+    void testSaveActivity(){
+        Activity last = new Activity(LocalDateTime.now(), "kerékpárverseny", Type.BIKING);
+        assertEquals(7, activityDao.saveActivity(last).getId());
+    }
 
-        assertEquals(activities, activityDao.listActivities());
+    @Test
+    void testFindActivityById(){
+        Activity expected = new Activity(3, activities.get(2));
+        assertEquals(expected, activityDao.findActivityById(3L));
+    }
+
+    @Test
+    void testListActivities() {
+        List<Activity> result = activityDao.listActivities();
+        assertEquals(6, result.size());
     }
 }

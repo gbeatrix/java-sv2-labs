@@ -37,7 +37,7 @@ public class ActivityTrackerMain {
             List<Activity> activities = new ArrayList<>();
             while (result.next()) {
                 activities.add(new Activity(
-                        result.getInt("id"),
+                        result.getLong("id"),
                         result.getTimestamp("start_time").toLocalDateTime(),
                         result.getString("activity_desc"),
                         Type.valueOf(result.getString("activity_type"))
@@ -49,13 +49,13 @@ public class ActivityTrackerMain {
         }
     }
 
-    public Activity getActivityById(int id){
+    public Activity getActivityById(long id){
         String sql = "SELECT * FROM activities WHERE id = ?;";
         try (
                 Connection connection = getDataSource().getConnection();
                 PreparedStatement stmt = connection.prepareStatement(sql)
         ) {
-            stmt.setInt(1, id);
+            stmt.setLong(1, id);
             return getFirstActivityByQuery(stmt);
 
         } catch (SQLException sqlerr) {
@@ -67,7 +67,7 @@ public class ActivityTrackerMain {
         try (ResultSet result = stmt.executeQuery()) {
             if (result.next()) {
                  return new Activity(
-                        result.getInt("id"),
+                        result.getLong("id"),
                         result.getTimestamp("start_time").toLocalDateTime(),
                         result.getString("activity_desc"),
                         Type.valueOf(result.getString("activity_type"))

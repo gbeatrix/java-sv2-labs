@@ -4,12 +4,12 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Activity {
-    private int id;
+    private long id;
     private LocalDateTime startTime;
     private String desc;
     private Type type;
 
-    public Activity(int id, LocalDateTime startTime, String desc, Type type) {
+    public Activity(long id, LocalDateTime startTime, String desc, Type type) {
         this.id = id;
         this.startTime = startTime;
         this.desc = desc;
@@ -17,14 +17,14 @@ public class Activity {
     }
 
     public Activity(LocalDateTime startTime, String desc, Type type) {
-        this(0, startTime, desc, type);
+        this(0L, startTime, desc, type);
     }
 
-    public Activity(int id, Activity other) {
+    public Activity(long id, Activity other) {
         this(id, other.startTime, other.desc, other.type);
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

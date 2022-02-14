@@ -29,10 +29,10 @@ public class ActivityDao {
         }
     }
 
-    private int getFirstGeneratedKey(PreparedStatement stmt) {
+    private long getFirstGeneratedKey(PreparedStatement stmt) {
         try (ResultSet rs = stmt.getGeneratedKeys()) {
             if (rs.next()) {
-                return rs.getInt(1);
+                return rs.getLong(1);
             } else {
                 throw new SQLException("Cannot get any generated id");
             }
@@ -47,7 +47,7 @@ public class ActivityDao {
                 Connection connection = dataSource.getConnection();
                 PreparedStatement stmt = connection.prepareStatement(sql)
         ) {
-            stmt.setInt(1, (int)id);
+            stmt.setLong(1, id);
             return getFirstActivityByQuery(stmt);
 
         } catch (SQLException sqlerr) {
@@ -59,7 +59,7 @@ public class ActivityDao {
         try (ResultSet result = stmt.executeQuery()) {
             if (result.next()) {
                 return new Activity(
-                        result.getInt("id"),
+                        result.getLong("id"),
                         result.getTimestamp("start_time").toLocalDateTime(),
                         result.getString("activity_desc"),
                         Type.valueOf(result.getString("activity_type"))
@@ -89,7 +89,7 @@ public class ActivityDao {
             List<Activity> activities = new ArrayList<>();
             while (result.next()) {
                 activities.add(new Activity(
-                        result.getInt("id"),
+                        result.getLong("id"),
                         result.getTimestamp("start_time").toLocalDateTime(),
                         result.getString("activity_desc"),
                         Type.valueOf(result.getString("activity_type"))

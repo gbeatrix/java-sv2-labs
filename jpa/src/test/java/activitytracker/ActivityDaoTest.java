@@ -49,12 +49,12 @@ class ActivityDaoTest {
     @Test
     void testSaveActivity(){
         Activity last = new Activity(LocalDateTime.now(), "kerékpárverseny", Type.BIKING);
-        assertEquals(7, activityDao.saveActivity(last).getId());
+        assertEquals(7L, activityDao.saveActivity(last).getId());
     }
 
     @Test
     void testFindActivityById(){
-        Activity expected = new Activity(3, activities.get(2));
+        Activity expected = new Activity(3L, activities.get(2));
         assertEquals(expected, activityDao.findActivityById(3L));
     }
 
